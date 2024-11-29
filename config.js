@@ -1,6 +1,6 @@
 module.exports = {
-    apiKey: process.env.BITGET_API_KEY || '**',
-    apiSecret: process.env.BITGET_API_SECRET || '**',
-    apiPass: process.env.BITGET_API_PASS || '**',
-    webhookSecret: process.env.WEBHOOK_SECRET || 'YOUR_WEBHOOK_SECRET'  // Add this to TradingView webhook URL
+    webhookSecret: process.env.WEBHOOK_SECRET || 'YOUR_WEBHOOK_SECRET',  // Add this to TradingView webhook URL
+    port: process.env.PORT || 3000,
+    publicUrl: process.env.PUBLIC_URL || 'http://localhost:3000',
+    sessionSecret: process.env.SESSION_SECRET || 'your-session-secret-key'  // For express-session
 };

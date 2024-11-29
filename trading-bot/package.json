@@ -2,13 +2,17 @@
   "name": "bitget-tradingbot",
   "version": "1.0.0",
   "description": "Trading bot for BitGet using TradingView webhooks",
-  "main": "webhook-logger.js",
+  "main": "trading-bot.js",
   "scripts": {
-    "start": "node webhook-logger.js",
-    "start:bot": "node tradingbot.js"
+    "start": "node trading-bot.js",
+    "log": "node webhook-logger.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "bitget-api": "^2.0.0",
+    "connect-flash": "^0.1.1",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.1"
   },
   "keywords": [],
   "author": "",
