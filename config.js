@@ -1,5 +1,6 @@
 module.exports = {
-    apiKey: 'bg_4cad8e79f7851604bbc8b126b1702e44',
-    apiSecret: 'ee5450551a9f6422fcf42b4738026916c77f711b528a099e3e3bd8f76b494ed3',
-    apiPass: 'Rochford109'
+    apiKey: process.env.BITGET_API_KEY || '**',
+    apiSecret: process.env.BITGET_API_SECRET || '**',
+    apiPass: process.env.BITGET_API_PASS || '**',
+    webhookSecret: process.env.WEBHOOK_SECRET || 'YOUR_WEBHOOK_SECRET'  // Add this to TradingView webhook URL
 };
