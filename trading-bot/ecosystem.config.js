@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'bitget-tradingbot',
-    script: 'tradingbot.js',
+    script: 'trading-bot.js',
     instances: 1,
     autorestart: true,
     watch: false,
@@ -9,10 +9,9 @@ module.exports = {
     env: {
       NODE_ENV: 'production',
       PORT: 3000,
-      BITGET_API_KEY: 'YOUR_API_KEY',
-      BITGET_API_SECRET: 'YOUR_API_SECRET',
-      BITGET_API_PASS: 'YOUR_API_PASSPHRASE',
-      WEBHOOK_SECRET: 'YOUR_WEBHOOK_SECRET'
+      PUBLIC_URL: 'https://bot.gdlife.co.uk',
+      SESSION_SECRET: process.env.SESSION_SECRET,
+      WEBHOOK_SECRET: process.env.WEBHOOK_SECRET
     }
   }]
 };
